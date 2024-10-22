@@ -49,6 +49,16 @@
         });
     });
 
+     // Treino model
+    $('.treino-switch').on('click', function () {
+        $('.treino-model').fadeIn(400);
+    });
+
+    $('.treino-close-switch').on('click', function () {
+        $('.treino-model').fadeOut(400, function () {          
+        });
+    });
+
     //Masonary
     $('.gallery').masonry({
         itemSelector: '.gs-item',

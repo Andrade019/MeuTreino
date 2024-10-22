@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/modal.css" type="text/css">
 
     <style>
         .responsive-image {
@@ -95,6 +96,7 @@
                         </a>
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <nav class="nav-menu">
                         <ul>
@@ -139,6 +141,39 @@
     </header>
     <!-- Header End -->
 
+    <!-- < Modal Search > -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- </ Modal > -->
+
+    <!-- < Modal Treino > -->
+    <div class="treino-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="treino-close-switch">+</div>
+            <form class="search-model-form">
+                <div class="modal-content">
+                    <div class="d-flex justify-content-center">
+                        <h2 class="modal-title" id="exampleModalLabel" style="color: white;">Escolha seu treino <i class="fas fa-dumbbell" style="color: #ffffff;"></i></h2>
+                        <svg width="30px" class="mt-2 ml-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M104 96H56c-13.3 0-24 10.7-24 24v104H8c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h24v104c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm528 128h-24V120c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v272c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h24c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM456 32h-48c-13.3 0-24 10.7-24 24v168H256V56c0-13.3-10.7-24-24-24h-48c-13.3 0-24 10.7-24 24v400c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V288h128v168c0 13.3 10.7 24 24 24h48c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24z"/></svg>
+                    </div>
+                    <div>
+                        <div class="d-flex row justify-content-center">
+                            <a class="primary-btn mt-4" style="width: 230px; color: white;">Treino de Superior</a>
+                            <a class="primary-btn mt-4" style="width: 230px; color: white;">Treino de Inferior </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- </ Modal > -->
+
     <!-- Hero Section Begin -->
     <section class="hero-section">
         <div class="hs-slider owl-carousel">
@@ -149,12 +184,35 @@
                             <div class="hi-text">
                                 <span class="ml-5">A persistência vence qualquer desafio.</span>
                                 <h1 class="ml-5">Supere <strong>seus </strong>limites</h1>
-                                <a href="#" class="primary-btn ml-5">COMEÇAR</a>
+                                <a type="button" class="primary-btn ml-5 treino-switch" style="color: white;" >COMEÇAR</a>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /> -->
+
             <div class="hs-item set-bg" data-setbg="img/hero/hero-2.jpg">
                 <div class="container">
                     <div class="row">
@@ -178,8 +236,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <span>Why chose us?</span>
-                        <h2>PUSH YOUR LIMITS FORWARD</h2>
+                        <span>Acredite e conquiste.</span>
+                        <h2>Disciplina gera resultados.</h2>
                     </div>
                 </div>
             </div>
@@ -187,33 +245,33 @@
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
                         <span class="flaticon-034-stationary-bike"></span>
-                        <h4>Modern equipment</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            dolore facilisis.</p>
+                        <h4>Equipamentos modernos</h4>
+                        <p>Utilizar equipamentos atualizados ajuda a otimizar os treinos, garantindo melhor desempenho e
+                            segurança durante os exercícios.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
                         <span class="flaticon-033-juice"></span>
-                        <h4>Healthy nutrition plan</h4>
-                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                            facilisis.</p>
+                        <h4>Plano de nutrição saudável</h4>
+                        <p>Manter uma alimentação equilibrada e personalizada é essencial para melhorar a saúde e
+                            alcançar resultados mais eficientes no treino.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
                         <span class="flaticon-002-dumbell"></span>
-                        <h4>Proffesponal training plan</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            dolore facilisis.</p>
+                        <h4>Plano de treinamento profissional</h4>
+                        <p>Seguir um plano de treino bem estruturado, criado por especialistas, faz toda a diferença no
+                            progresso e na prevenção de lesões. </p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6">
                     <div class="cs-item">
                         <span class="flaticon-014-heart-beat"></span>
-                        <h4>Unique to your needs</h4>
-                        <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel
-                            facilisis.</p>
+                        <h4>Personalizado para suas necessidades</h4>
+                        <p>Adaptar tanto o treino quanto a dieta às suas necessidades individuais é fundamental para
+                            maximizar os resultados e manter a consistência.</p>
                     </div>
                 </div>
             </div>
@@ -594,17 +652,11 @@
     <!-- Footer Section End -->
 
     <!-- Search model Begin -->
-    <div class="search-model">
-        <div class="h-100 d-flex align-items-center justify-content-center">
-            <div class="search-close-switch">+</div>
-            <form class="search-model-form">
-                <input type="text" id="search-input" placeholder="Search here.....">
-            </form>
-        </div>
-    </div>
+
     <!-- Search model end -->
 
     <!-- Js Plugins -->
+
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
@@ -619,3 +671,6 @@
 </body>
 
 </html>
+<script>
+
+</script>

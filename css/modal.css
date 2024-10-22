@@ -1,0 +1,28 @@
+.modal-content {
+    background-color: #2b2b2b; /* Fundo escuro para o conteúdo */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    width: 80%; /* Largura do conteúdo */
+    max-width: 500px; /* Largura máxima */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+.btn-treino {
+    background-color: #4CAF50; /* Cor do botão */
+    color: white; /* Texto branco */
+    border: none; /* Sem borda */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza texto */
+    text-decoration: none; /* Sem sublinhado */
+    display: inline-block; /* Para permitir margens */
+    margin: 10px 2px; /* Margens entre botões */
+    cursor: pointer; /* Muda o cursor para pointer */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave para a cor do botão */
+}
+
+.btn-treino:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+}
